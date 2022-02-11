@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>
+        list student view
+    </title>
+</head>
+
+    <body>
+        <h1>student ditail</h1>
+        <ul>
+            <li>ferst name :{{ studentmodel.fname }}</li>
+            <li>last name :{{ studentmodel.lname }}</li>
+            <li>Scores :{{ studentmodel.Scores }}</li>
+            <a href="/crud/update/{{ studentmodel.id }}">update</a>
+            <a href="/crud/delete/{{ studentmodel.id }}">delete</a>
+        </ul>
+
+    </body>
+</html>

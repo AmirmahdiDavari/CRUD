@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>
+        list student view
+    </title>
+</head>
+
+    <body>
+        {% if Student_list %}
+            <table>
+                <thead>
+                <th>ID</th>
+                <th>fname</th>
+                <th>lname</th>
+                <th>Scores</th>
+                </thead>
+            {% for student in Student_list%}
+                <tr>
+                <td><a href="/crud/{{ student.id }}">{{ student.id }}</a></td>
+                <td>{{ student.fname }}</td>
+                <td>{{ student.lname }}</td>
+                    <td>{{ student.Scores }}</td>
+                </tr>
+            {%  endfor %}
+            </table>
+
+
+    {% else %}
+    <P>no student found</P>
+    {% endif %}
+
+    </body>
+</html>

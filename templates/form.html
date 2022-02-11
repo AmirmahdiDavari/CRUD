@@ -1,0 +1,13 @@
+<html>
+
+
+<body>
+<form method="post" >
+    {{ form.as_p }}
+
+    {% csrf_token %}
+        <input type="submit" value="Send Request">
+
+</form>
+</body>
+</html>

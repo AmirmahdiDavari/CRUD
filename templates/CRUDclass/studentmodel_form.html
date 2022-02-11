@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>
+        list student view
+    </title>
+</head>
+
+    <body>
+        <h1> add new student  </h1>
+        <form method="POST">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="submit" value="add new student">
+        </form>
+
+
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>
+        list student view
+    </title>
+    <style>
+        a {
+            padding: 0px 10px 3px 10px;
+            border: 1px solid rgba(0, 0, 0, 0.61);
+            border-radius: 2px;
+            background-color: #afafaf2d;
+        }
+    </style>
+</head>
+    <body>
+        <h1> add new student  </h1>
+        <form method="POST">
+            {{ form.as_p }}
+            {% csrf_token %}
+{#            <input type="submit" value="yes">#}
+            <input type="submit" value="yes">
+            <a href="/crud/{{ student.id }}" class="btn btn-outline-dark" > no</a>
+
+{#            <a href="/crud/{{ student.id }}"  > no</a>#}
+        </form>
+
+
+    </body>
+</html>

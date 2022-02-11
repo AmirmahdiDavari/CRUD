@@ -1,0 +1,29 @@
+<html>
+<body>
+{% if Projects %}
+    <table>
+        <thead>
+        <th>name</th>
+        <th>start_date</th>
+        <th>end_date</th>
+        <th>priorety</th>
+        </thead>
+        {% for project in Projects %}
+            <tr>
+                <td>{{ project.name }}</td>
+                <td>{{ project.start_date }}</td>
+                <td>{{ project.end_date }}</td>
+                <td>{{ project.priorety }}</td>
+            </tr>
+
+
+        {% endfor %}
+
+    </table>
+
+{% else %}
+    <p>THER IS NO PROJECTS </p>
+
+{% endif %}
+</body>
+</html>

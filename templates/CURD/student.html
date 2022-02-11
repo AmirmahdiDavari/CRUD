@@ -1,0 +1,36 @@
+<html>
+<body>
+
+<h1 ><a href="add/">add new  student</a></h1>
+<br>
+{% if students %}
+    <table>
+        <thead>
+        <th>ID      </th>
+        <th>fname</th>
+        <th>lname</th>
+        <th>Scores</th>
+        <th>updata</th>
+        <th>delate</th>
+        </thead>
+        {% for student in students %}
+            <tr>
+                <td>{{ student.id }}</td>
+                <td>{{ student.fname }}</td>
+                <td>{{ student.lname }}</td>
+                <td>{{ student.Scores }}</td>
+                <td><a href="delete/{{student.id}}">delete</a></td>
+                <td><a href="update/{{student.id}}">update</a></td>
+            </tr>
+
+
+        {% endfor %}
+
+    </table>
+
+{% else %}
+    <p>THER IS NO student </p>
+
+{% endif %}
+</body>
+</html>

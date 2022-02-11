@@ -1,0 +1,17 @@
+<html>
+<body>
+<h1>udate new student</h1>
+<form  method="post" >
+    {%  csrf_token    %}
+    {{ form.as_p }}
+
+{#    ferstname : <input name="fname" value="{{ students.fname }}"/>#}
+{#    lastname:   <input name="lname" value="{{ students.lname }}"/>#}
+{#    Scores:     <input name="Scores" value="{{ students.Scores }}"/>#}
+
+    <input type="submit" value="update  student"/>
+    <a href="/">بازگشت</a>
+
+</form>
+</body>
+</html>

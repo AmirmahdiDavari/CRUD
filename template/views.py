@@ -71,4 +71,6 @@ def add_project(request):
 
             return index(request)
 
+
+
     return render(request, 'add_project.html', {'form': form})

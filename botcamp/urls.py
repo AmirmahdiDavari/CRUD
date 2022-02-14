@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("template/",include('template.urls')),
     path("",include('CURD.urls')),
+    path("cookies/",include('Cookies.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

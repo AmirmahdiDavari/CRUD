@@ -23,3 +23,4 @@ def countviews(request):
     response = render(request,"cookies/count.html",{'count':count})
     response.set_cookie('count', count)
     return response
+

@@ -21,7 +21,10 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("template/",include('template.urls')),
-    path("",include('CURD.urls')),
+    path("crud",include('CURD.urls')),
     path("cookies/",include('Cookies.urls')),
+    path("card/",include('shopecard.urls')),
+    path("sessions/",include('sessionapp.urls')),
+    path("shop/",include('shopecard.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

@@ -1,0 +1,21 @@
+<h1>item cards </h1>
+{% if request.session %}
+    <table>
+        <thead>
+        <th>name</th>
+        <th>value</th>
+        {% for key, value in request.session.items %}
+            <tr>
+                <td>{{ key }}</td>
+                <td>{{ value }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <a href="/card/">bazghast</a>
+
+
+
+{% else %}
+
+
+{% endif %}

@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     'template',
     'CURD',
     'Cookies',
+    'shopecard',
+    "sessionapp",
+
+
 
 ]
 
